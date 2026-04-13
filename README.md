@@ -59,16 +59,9 @@ Aller sur http://localhost:8080 et activer le DAG ars_epidemio_dag
 Les fichiers JSON sont organisés selon la structure suivante dans le volume Docker /data/ars :
 
 /data/ars/
-├── raw/
-│   └── <année>/
-│       └── S<semaine>/
-│           └── sursaud_<semaine>.json
-├── indicateurs/
-│   └── indicateurs_<semaine>.json
-└── rapports/
-    └── <année>/
-        └── S<semaine>/
-            └── rapport_<semaine>.json
+raw/<année>/ S<semaine>/sursaud_<semaine>.json
+indicateurs/indicateurs_<semaine>.json
+rapports/<année>/ S<semaine>/rapport_<semaine>.json
 
 Il y a 4 tables dans postgreSQL : 
 - syndromes : GRIPPE, GEA, SG, BRONCHIO, COVID19
